@@ -2,10 +2,7 @@
 'use strict';
 
 // Import the Dialogflow module from the Actions on Google client library.
-const {
-  dialogflow,
-  SimpleResponse
-} = require('actions-on-google');
+const {dialogflow} = require('actions-on-google');
 
 // Import the firebase-functions package for deployment.
 const functions = require('firebase-functions');
