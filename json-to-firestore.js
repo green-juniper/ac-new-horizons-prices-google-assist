@@ -4,7 +4,7 @@
 const firebase = require("firebase");
 require("firebase/firestore");
 
-  var firebaseConfig = {
+var firebaseConfig = {
     apiKey: "your-api-key",
     authDomain: "your-auth-domain",
     databaseURL: "your-db-url",
@@ -888,14 +888,5 @@ var items = [
 ];
 
 items.forEach(function(obj) {
-    db.collection("items").add({
-        item_name: obj.item_name,
-        category: obj.category,
-        price: obj.price
-    }).then(function(docRef) {
-        console.log("Document written with ID: ", docRef.id);
-    })
-    .catch(function(error) {
-        console.error("Error adding document: ", error);
-    });
+    db.collection("items").doc(String(obj.item_name.toLowerCase())).set(obj)
 });
