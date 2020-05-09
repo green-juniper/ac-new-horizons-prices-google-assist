@@ -50,7 +50,7 @@ Loading data into Firestore using the UI is a bit of a pain, especially with all
 Modify `json-to-firestore.js` to include your Firestore app credentials.
 
 ```javascript
-ar firebaseConfig = {
+var firebaseConfig = {
     apiKey: "your-api-key",
     authDomain: "your-auth-domain",
     databaseURL: "your-db-url",
