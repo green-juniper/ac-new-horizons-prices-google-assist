@@ -10,6 +10,8 @@ You will need to build out voice interactions using DialogFlow, see [Google's Ac
 Once you've created the `price of item` intent in DialogFlow and the custom entity for `item`, you can fulfill the intent using a webhook that connects to a Firebase deployment. You can copy-paste `dialogflow-item-custom-entity.json` when creating an entity using raw mode for quick upload. This allows the voice assistant to recognize all the items in Animal Crossing that a user might ask for.
 
 ### Using Firebase to return item prices
+Now that you've set up the DialogFlow voice assistant, you'll need to fulfill user requests for item prices using a simple Firebase API function and database.
+
 Google's [Level 2 Actions on Google Codelab tutorial](https://codelabs.developers.google.com/codelabs/actions-2/index.html#0) covers how to use Firebase for Google actions.
 
 
